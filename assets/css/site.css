@@ -1,25 +1,28 @@
-/* SARCOMA – makieta klikalna (wireframe). brand: TBD — tylko paleta neutralna */
+/* SARCOMA – makieta klikalna (wireframe). brand: from https://www.sarcoma.pl */
 
 :root {
-  --bg: #f0f0f0;
+  /* Palette extracted from sarcoma.pl CSS + logo.png */
+  --bg: #f2f2f2;
   --bg-page: #ffffff;
-  --text: #1a1a1a;
-  --text-muted: #4a4a4a;
-  --border: #b0b0b0;
-  --border-soft: #d4d4d4;
-  --link: #1a1a1a;
-  --link-underline: #555555;
-  --focus: #000000;
-  --btn-bg: #1a1a1a;
+  --text: #262626;
+  --text-muted: #534e4e;
+  --border: #acadaf;
+  --border-soft: #e7e8e9;
+  --link: #57a3b1;
+  --link-underline: #57a3b1;
+  --focus: #17c8ff;
+  --btn-bg: #6bbbcb;
   --btn-text: #ffffff;
-  --toolbar-bg: #e4e4e4;
-  --label-bg: #1a1a1a;
+  --accent: #ffca00;
+  --accent-dark: #ff8c00;
+  --toolbar-bg: #f8f8f8;
+  --label-bg: #065270;
   --label-text: #ffffff;
-  --card-hover: #fafafa;
-  --step-num-bg: #1a1a1a;
+  --card-hover: #f9f9f9;
+  --step-num-bg: #57a3b1;
   --step-num-text: #ffffff;
-  --banner-bg: #2a2a2a;
-  --banner-text: #f5f5f5;
+  --banner-bg: #065270;
+  --banner-text: #ffffff;
   --font-size-base: 1.0625rem;
   --space: 1.25rem;
   --radius: 4px;
@@ -40,6 +43,8 @@ body.contrast {
   --focus: #00ffff;
   --btn-bg: #ffff00;
   --btn-text: #000000;
+  --accent: #ffff00;
+  --accent-dark: #ffff00;
   --toolbar-bg: #000000;
   --label-bg: #ffff00;
   --label-text: #000000;
@@ -149,15 +154,25 @@ a:hover { text-decoration-thickness: 2px; }
   justify-content: space-between;
 }
 .logo {
-  font-size: 1.55rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
   color: var(--text);
-  border: 2px solid var(--border);
-  padding: 0.25rem 0.6rem;
+  line-height: 0;
+  padding: 0.15rem 0;
 }
-.logo:hover { color: var(--text); background: var(--toolbar-bg); }
+.logo img {
+  display: block;
+  height: 52px;
+  width: auto;
+  max-width: min(220px, 55vw);
+}
+.logo:hover { opacity: 0.92; }
+body.contrast .logo {
+  background: #ffffff;
+  padding: 0.35rem 0.55rem;
+  border-radius: var(--radius);
+}
 
 .nav-toggle {
   display: none;
@@ -190,7 +205,8 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  border-bottom-color: var(--text);
+  border-bottom-color: var(--accent);
+  color: var(--link);
   text-decoration: none;
 }
 
