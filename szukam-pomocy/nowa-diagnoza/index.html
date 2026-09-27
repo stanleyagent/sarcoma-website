@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="/sarcoma-website/">
-  <title>Strona główna – SARCOMA</title>
-  <meta name="description" content="Makieta klikalna nowej strony SARCOMA — Strona główna">
+  <title>Nowa diagnoza – SARCOMA</title>
+  <meta name="description" content="Makieta klikalna nowej strony SARCOMA — Nowa diagnoza">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -30,8 +30,8 @@
       <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Otwórz menu</button>
       <nav class="main-nav" id="main-nav" aria-label="Menu główne">
         <ul>
-          <li><a href="" aria-current="page">Strona główna</a></li>
-          <li><a href="szukam-pomocy/">Szukam pomocy</a></li>
+          <li><a href="">Strona główna</a></li>
+          <li><a href="szukam-pomocy/" aria-current="page">Szukam pomocy</a></li>
           <li><a href="nowotwory/">Nowotwory</a></li>
           <li><a href="wiedza/">Wiedza i materiały</a></li>
           <li><a href="projekty/">Projekty</a></li>
@@ -43,94 +43,38 @@
     </div>
   </header>
   <main id="main" class="site-main">
-    <section class="wf-box hero" aria-labelledby="hero-h">
-      <span class="wf-label">[Wireframe] Sekcja: Hero / główne wezwanie do działania</span>
-      <h1 id="hero-h">Wsparcie przy mięsakach, czerniaku i rakach skóry</h1>
-      <p class="lead">Makieta strony głównej. Pacjent i bliscy szybko trafiają do pomocy albo informacji o chorobie.</p>
-      <div class="cta-row">
-        <a class="btn-cta" href="szukam-pomocy/">Szukam pomocy</a>
-        <a class="btn-secondary" href="wspieram/">Wspieram</a>
-      </div>
+    <nav class="breadcrumb" aria-label="Ścieżka nawigacji"><ol><li><a href="./">Strona główna</a></li><li><a href="szukam-pomocy/">Szukam pomocy</a></li><li>Nowa diagnoza</li></ol></nav>
+    <section class="wf-box" aria-labelledby="lead-h">
+      <span class="wf-label">[Wireframe] Sekcja: Lead ścieżki sytuacyjnej</span>
+      <h1 id="lead-h">Mam podejrzenie lub nową diagnozę</h1>
+      <p class="lead">Przykład pełnej ścieżki sytuacyjnej. Spokojnie, krok po kroku — możesz skorzystać z infolinii i materiałów poniżej.</p>
     </section>
 
-    <section class="wf-box" aria-labelledby="wejscia-h">
-      <span class="wf-label">[Wireframe] Sekcja: Wejścia: Szukam pomocy / Nowotwory</span>
-      <h2 id="wejscia-h">Dwa główne wejścia</h2>
+    <section class="wf-box" aria-labelledby="powiazane-h">
+      <span class="wf-label">[Wireframe] Sekcja: Kafelki powiązanych treści</span>
+      <h2 id="powiazane-h">Przydatne materiały</h2>
       <div class="card-grid">
-        <a class="card" href="szukam-pomocy/">
-          <h3>Szukam pomocy</h3>
-          <p>Ścieżki według sytuacji: nowa diagnoza, leczenie, rodzice, bliscy, kadra medyczna.</p>
-          <span class="card-cta">Przejdź →</span>
-        </a>
-        <a class="card" href="nowotwory/">
-          <h3>Nowotwory</h3>
-          <p>Informacje o mięsakach, czerniaku i rakach skóry — krok po kroku.</p>
-          <span class="card-cta">Przejdź →</span>
-        </a>
+        <a class="card" href="miesaki/czym-sa-miesaki/"><h3>Czym są mięsaki</h3><p>Podstawowe informacje (pełny szablon).</p><span class="card-cta">Czytaj →</span></a>
+        <a class="card" href="miesaki/diagnostyka/"><h3>Diagnostyka</h3><p>Jak wygląda proces diagnostyczny.</p><span class="card-cta">Czytaj →</span></a>
+        <a class="card" href="gdzie-sie-leczyc/"><h3>Gdzie się leczyć</h3><p>Lista ośrodków.</p><span class="card-cta">Zobacz →</span></a>
+        <a class="card" href="wiedza/poradniki/"><h3>Poradniki dla pacjenta</h3><p>Materiały edukacyjne.</p><span class="card-cta">Zobacz →</span></a>
+        <a class="card" href="wideo/"><h3>Materiały wideo</h3><p>Filmy wyjaśniające.</p><span class="card-cta">Zobacz →</span></a>
+        <a class="card" href="nowotwory/"><h3>Wybierz nowotwór</h3><p>Hub chorób.</p><span class="card-cta">Przejdź →</span></a>
       </div>
     </section>
 
-    <section class="wf-box" aria-labelledby="liczby-h">
-      <span class="wf-label">[Wireframe] Sekcja: SARCOMA w liczbach</span>
-      <h2 id="liczby-h">SARCOMA w liczbach</h2>
-      <div class="stats-grid">
-        <div class="stat"><span class="num">000+</span><span class="desc">osób objętych wsparciem</span></div>
-        <div class="stat"><span class="num">00</span><span class="desc">lat działalności</span></div>
-        <div class="stat"><span class="num">00</span><span class="desc">projektów</span></div>
-      </div>
+    <section class="wf-box" aria-labelledby="inf-h">
+      <span class="wf-label">[Wireframe] Sekcja: Blok stały: Infolinia</span>
+      <h2 id="inf-h">Infolinia SARCOMA</h2>
+      <p>Zadzwoń: <a href="tel:+48000000000">+48 000 000 000</a> · Godziny: pn–pt 9:00–17:00 <em>(do uzupełnienia)</em></p>
+      <p><a class="btn-secondary" href="infolinia/">Więcej o infolinii</a></p>
     </section>
 
-    <section class="wf-box" aria-labelledby="projekty-h">
-      <span class="wf-label">[Wireframe] Sekcja: Wybrane projekty</span>
-      <h2 id="projekty-h">Wybrane projekty</h2>
-      <div class="card-grid">
-        <a class="card" href="projekty/onkobieg/"><h3>Onkobieg</h3><p>Bieg i wydarzenie wspierające pacjentów.</p><span class="card-cta">Zobacz →</span></a>
-        <a class="card" href="projekty/profilaktyka-miesakow/"><h3>Profilaktyka mięsaków</h3><p>Edukacja i wczesne wykrywanie.</p><span class="card-cta">Zobacz →</span></a>
-        <a class="card" href="projekty/profilaktyka-rakow-skory/"><h3>Miej oko na skórę</h3><p>Profilaktyka raków skóry.</p><span class="card-cta">Zobacz →</span></a>
-      </div>
-      <p style="margin-top:1rem"><a href="projekty/">Wszystkie projekty →</a></p>
-    </section>
-
-    <section class="wf-box" aria-labelledby="akt-h">
-      <span class="wf-label">[Wireframe] Sekcja: Aktualności (3 karty)</span>
-      <h2 id="akt-h">Aktualności</h2>
-      <div class="card-grid">
-        <a class="card" href="aktualnosci/przyklad-1/"><h3>Przykładowa aktualność 1</h3><p>Skrót wpisu — do uzupełnienia. Data: 00.00.0000</p><span class="card-cta">Czytaj →</span></a>
-        <a class="card" href="aktualnosci/przyklad-2/"><h3>Przykładowa aktualność 2</h3><p>Skrót wpisu — do uzupełnienia. Data: 00.00.0000</p><span class="card-cta">Czytaj →</span></a>
-        <a class="card" href="aktualnosci/przyklad-3/"><h3>Przykładowa aktualność 3</h3><p>Skrót wpisu — do uzupełnienia. Data: 00.00.0000</p><span class="card-cta">Czytaj →</span></a>
-      </div>
-      <p style="margin-top:1rem"><a href="aktualnosci/">Wszystkie aktualności →</a></p>
-    </section>
-
-    <section class="wf-box" aria-labelledby="wideo-h">
-      <span class="wf-label">[Wireframe] Sekcja: Materiały wideo</span>
-      <h2 id="wideo-h">Materiały wideo</h2>
-      <div class="card-grid">
-        <a class="card" href="wideo/przyklad-filmu/">
-          <div class="media-placeholder" aria-hidden="true">▶ Podgląd filmu</div>
-          <h3>Przykładowy film</h3>
-          <p>Opis materiału wideo — do uzupełnienia.</p>
-          <span class="card-cta">Obejrzyj →</span>
-        </a>
-        <a class="card" href="wideo/">
-          <div class="media-placeholder" aria-hidden="true">▶ Lista</div>
-          <h3>Wszystkie filmy</h3>
-          <p>Przejdź do biblioteki materiałów wideo.</p>
-          <span class="card-cta">Lista →</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="wf-box" aria-labelledby="partnerzy-h">
-      <span class="wf-label">[Wireframe] Sekcja: Partnerzy / nagrody</span>
-      <h2 id="partnerzy-h">Partnerzy i nagrody</h2>
-      <p>Miejsce na logotypy partnerów oraz wyróżnienia organizacji.</p>
-      <div class="partner-row">
-        <div class="partner-slot">Partner 1</div>
-        <div class="partner-slot">Partner 2</div>
-        <div class="partner-slot">Nagroda</div>
-      </div>
-      <p style="margin-top:1rem"><a href="o-nas/partnerzy/">Więcej o partnerach →</a></p>
+    <section class="wf-box" aria-labelledby="psycho-h">
+      <span class="wf-label">[Wireframe] Sekcja: Blok stały: Wsparcie psychoonkologiczne</span>
+      <h2 id="psycho-h">Wsparcie psychoonkologiczne</h2>
+      <p>Oferta wsparcia psychologicznego dla pacjentów i bliskich tuż po diagnozie.</p>
+      <p><a class="btn-secondary" href="wsparcie-psychoonkologiczne/">Dowiedz się więcej</a></p>
     </section>
 
   </main>
